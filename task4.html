@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       h2{
+        width: 50%;
+        animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-name: direction;
+           
+       }
+.one{
+    animation-direction: normal;
+
+}
+.two{
+    animation-direction: reverse;
+
+}
+.three{
+    animation-direction: alternate;
+
+}
+.four{
+
+    animation-direction: alternate-reverse;
+}
+@keyframes direction {
+    from{
+        margin-left: 0%;
+    }
+    to{
+        margin-left: 50%;
+    }
+}
+    </style>
+</head>
+<body>
+    <h2 class="one">This text is normal</h2>
+    <h2 class="two">This text is reverse</h2>
+    <h2 class="three">This text is alternate</h2>
+    <h2 class="four">This text is alternate-reverse</h2>
+
+</body>
+</html>

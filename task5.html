@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ol li::marker {
+        animation-name: greater;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards; 
+      }
+      ol li:nth-child(1)::marker {
+        animation-delay: 0;
+      }
+      ol li:nth-child(2)::marker {
+        animation-delay: 0.5s;
+      }
+      ol li:nth-child(3)::marker {
+        animation-delay: 1s;
+      }
+      ol li:nth-child(4)::marker {
+        animation-delay: 1.5s;
+      }
+      ol li:nth-child(5)::marker {
+        animation-delay: 2s;
+      }
+      @keyframes greater {
+        from{
+            font-size: 15px;
+        } 
+        to{
+            font-size: 30px;
+            color: green;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>PHP</li>
+      <li>Angular.js</li>
+    </ol>
+  </body>
+</html>

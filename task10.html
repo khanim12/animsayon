@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+      }
+      .container .box {
+        width: 20px;
+        height: 50px;
+        background-color: rgb(105, 230, 105);
+        animation: scalei 3s infinite;
+      }
+      .container2 {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+      }
+      .container2 .box {
+        width: 20px;
+        height: 200px;
+        background-color: blue;
+        animation: scaled 3s infinite;
+      }
+      .box:nth-child(2) {
+        animation-delay: 0.5s;
+      }
+      .box:nth-child(3) {
+        animation-delay: 0.75s;
+      }
+      .box:nth-child(4) {
+        animation-delay: 1s;
+      }
+      .box:nth-child(5) {
+        animation-delay: 1.5s;
+      }
+
+      @keyframes scaled {
+        50% {
+          transform: scaleY(0.25);
+        }
+      }
+      @keyframes scalei {
+        50% {
+          transform: scaleY(4);
+          opacity: 0.9;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="container2">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

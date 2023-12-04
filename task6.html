@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            transform: skewX(-10deg); 
+        }
+        button:hover{
+        animation: skew 0.4s ease-out; 
+            border: 2px solid green; 
+            color: green; 
+        }
+        @keyframes skew { 
+            0% { 
+                transform: skewX(-10deg); 
+            } 
+  
+            25% { 
+                transform: skewX(10deg); 
+            } 
+  
+            50% { 
+                transform: skewX(-10deg); 
+            } 
+  
+            75% { 
+                transform: skewX(10deg); 
+            } 
+  
+            100% { 
+                transform: skewX(-10deg); 
+            } 
+        } 
+    </style>
+</head>
+<body>
+    <button>geeks for geeks</button>
+</body>
+</html>
